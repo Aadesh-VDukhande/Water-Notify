@@ -1,0 +1,12 @@
+import time      # Ye time import karega system me se
+
+from plyer import notification     # Plyer install kela ahe tya chya kadun 'notification' import karnar
+if __name__ == '__main__':          # Ha Function ahe jo use kartoy 
+    while True :                     #while true use kartoy continouse app background madhe calnya sati
+        notification.notify(           
+            title="Pls! Drink Water" ,      # Ha tittle show karnar
+            message="Human body required 8 to 10 glass of water per day.For Male it's required 3.7 ltr of water in a day and Female it's required 3.2 ltr of water in a day" ,
+            app_icon = "J:\Python Excersice\Python Project\Water Notification\drinkwater.ico",   # Hi image ahe ji download keli ahe, tyachi link address
+            timeout = 5        # Ha time out ahe app cha jo set keleya time nantr timeout honar
+        )
+        time.sleep(8)          #It's notification will sleep for set time
